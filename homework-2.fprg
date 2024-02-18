@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-17 07:55:49 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVQwT0g1MTc7MjAyNC0wMi0xNzswNzozNzoxNCBBTTszMjg0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVQwT0g1MTc7MjAyNC0wMi0xNzswNzo1NTo0OSBBTTsyOzM0MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <assign variable="z" expression="x+y"/>
+            <output expression="z" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
