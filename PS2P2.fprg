@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 10:33:30 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhUQ1VOSzE7MjAyNC0wMi0yMzswOTo1MDo1MiBQTTszMzY1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhUQ1VOSzE7MjAyNC0wMi0yMzsxMDoxMjoxMyBQTTsxOzM0NjA="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUszM0pMSzQ7MjAyNC0wMi0yODswODoxNToxNSBQTTszOzM0MjM="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxFN0xBTUU7MjAyNC0wMi0yODsxMDozMzozMCBQTTsyOzM0NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="payrate" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="hours"/>
+            <input variable="payrate"/>
+            <assign variable="total" expression="hours*payrate"/>
+            <output expression="name &amp; &quot; &quot; &amp; &quot;is the last name&quot; &amp; &quot; &quot; &amp; total &amp; &quot; &quot; &amp;  &quot;is the total pay&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

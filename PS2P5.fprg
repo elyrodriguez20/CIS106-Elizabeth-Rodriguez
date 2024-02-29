@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 02:14:59 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVZLU05SR1A7MjAyNC0wMi0yNDsxMTowNzozMiBBTTszMzg5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVZLU05SR1A7MjAyNC0wMi0yNDsxMTozNjozNyBBTTsxOzM1MDQ="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUszM0pMSzQ7MjAyNC0wMi0yODswODoxOTozMSBQTTsxOzM0MjM="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxFN0xBTUU7MjAyNC0wMi0yODsxMTowNTozNyBQTTsxOzM0NTE="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUYyM0sxTzk7MjAyNC0wMi0yOTswMjoxNDo1OSBQTTsxOzM0MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="discountrate" type="Integer" array="False" size=""/>
+            <declare name="discount" type="Real" array="False" size=""/>
+            <declare name="discountedprice" type="Real" array="False" size=""/>
+            <input variable="price"/>
+            <input variable="discountrate"/>
+            <assign variable="discount" expression="price*discountrate/ 100"/>
+            <assign variable="discountedprice" expression="price-discount"/>
+            <output expression="discount &amp; &quot; &quot;&amp;  discountedprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

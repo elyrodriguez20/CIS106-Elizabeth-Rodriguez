@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 10:34:32 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhUQ1VOSzE7MjAyNC0wMi0yMzsxMDoxMjo0OCBQTTszMzYw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhUQ1VOSzE7MjAyNC0wMi0yMzsxMDoxNzowMyBQTTsxOzM0NjQ="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUszM0pMSzQ7MjAyNC0wMi0yODswODoxNjozOCBQTTsyOzM0Mjg="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxFN0xBTUU7MjAyNC0wMi0yODsxMDozNDozMiBQTTsxOzM0NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <input variable="quantity"/>
+            <input variable="price"/>
+            <assign variable="extprice" expression="quantity*price"/>
+            <output expression="extprice &amp; &quot; &quot; &amp; &quot;is the extended price&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

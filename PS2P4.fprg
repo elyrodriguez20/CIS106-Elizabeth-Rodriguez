@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-28 10:36:46 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhUQ1VOSzE7MjAyNC0wMi0yMzsxMDoyNDo0NiBQTTszMzYx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhUQ1VOSzE7MjAyNC0wMi0yMzsxMDozMDo1OCBQTTsxOzM0Njk="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUszM0pMSzQ7MjAyNC0wMi0yODswODoxNzoyNCBQTTsxOzM0MjM="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUxFN0xBTUU7MjAyNC0wMi0yODsxMDozNjo0NiBQTTsyOzM0NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="credits" type="Integer" array="False" size=""/>
+            <declare name="tuition" type="Real" array="False" size=""/>
+            <declare name="labfee" type="Integer" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="credits"/>
+            <input variable="labfee"/>
+            <assign variable="tuition" expression="credits* 250 + labfee"/>
+            <output expression="name &amp; &quot; &quot; &amp; &quot; is the last name&quot; &amp; &quot; &quot; &amp; tuition &amp; &quot; &quot; &amp; &quot; is the tuition&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
