@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 03:32:51 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUYyM0sxTzk7MjAyNC0wMi0yOTswMzoyMToyNiBQTTszMjg1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUYyM0sxTzk7MjAyNC0wMi0yOTswMzozMjo1MSBQTTsyOzMzOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="perimeter" type="Integer" array="False" size=""/>
+            <declare name="circle" type="Integer" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <assign variable="area" expression="3.174*radius^2"/>
+            <assign variable="perimeter" expression="2*3.174*radius"/>
+            <output expression="area &amp; &quot; &quot; &amp;  &quot;is the area of a circle&quot;" newline="True"/>
+            <output expression="perimeter &amp; &quot; &quot; &amp; &quot;is the perimeter of a circle&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
