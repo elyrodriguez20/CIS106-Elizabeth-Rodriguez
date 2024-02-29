@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-29 04:19:04 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUYyM0sxTzk7MjAyNC0wMi0yOTswMjozNDoxMyBQTTszMjg0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUYyM0sxTzk7MjAyNC0wMi0yOTswNDoxOTowNCBQTTsyOzMzOTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="you" type="String" array="False" size=""/>
+            <declare name="friendone" type="String" array="False" size=""/>
+            <declare name="friendtwo" type="String" array="False" size=""/>
+            <declare name="amount" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="you"/>
+            <input variable="friendone"/>
+            <input variable="friendtwo"/>
+            <input variable="amount"/>
+            <assign variable="total" expression="amount / 3"/>
+            <output expression="you &amp; &quot; &quot; &amp; total &amp; &quot; &quot; &amp; friendone &amp; &quot; &quot; &amp; total &amp; &quot; &quot; &amp; friendtwo &amp; &quot; &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
