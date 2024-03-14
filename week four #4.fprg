@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-09 07:12:48 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZVSjVSMzg7MjAyNC0wMy0wOTswNjoxNToxNyBQTTszMzMw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZVSjVSMzg7MjAyNC0wMy0wOTswNzoxMjo0OCBQTTsxOzM0NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="numberofsteps" type="Integer" array="False" size=""/>
+            <declare name="calories" type="Real" array="False" size=""/>
+            <declare name="totalcalories" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="numberofsteps"/>
+            <input variable="calories"/>
+            <assign variable="totalcalories" expression="numberofsteps * calories"/>
+            <output expression="name &amp; &quot; &quot; &amp; &quot;is the first name&quot;" newline="True"/>
+            <output expression="totalcalories &amp; &quot; &quot; &amp; &quot;is the total calories burned&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

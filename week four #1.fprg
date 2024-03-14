@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 05:24:10 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg0QUQwRE47MjAyNC0wMy0xMDswNDoxNDoyMyBQTTszMjk2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg0QUQwRE47MjAyNC0wMy0xMDswNToyNDoxMCBQTTsyOzM0MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="examone" type="Real" array="False" size=""/>
+            <declare name="examtwo" type="Real" array="False" size=""/>
+            <declare name="totalscore" type="Real" array="False" size=""/>
+            <declare name="totalpercentone" type="Real" array="False" size=""/>
+            <declare name="totalpercenttwo" type="Real" array="False" size=""/>
+            <declare name="examonepercent" type="Real" array="False" size=""/>
+            <declare name="examtwopercent" type="Real" array="False" size=""/>
+            <declare name="respecweightone" type="Integer" array="False" size=""/>
+            <declare name="respecweighttwo" type="Integer" array="False" size=""/>
+            <input variable="examone"/>
+            <input variable="examtwo"/>
+            <input variable="respecweightone"/>
+            <input variable="respecweighttwo"/>
+            <assign variable="totalpercentone" expression="respecweightone * examone/100"/>
+            <assign variable="totalpercenttwo" expression="respecweighttwo *examtwo/100"/>
+            <assign variable="totalscore" expression="totalpercentone + totalpercenttwo"/>
+            <output expression="totalscore &amp; &quot; &quot; &amp; &quot;is the total score&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
