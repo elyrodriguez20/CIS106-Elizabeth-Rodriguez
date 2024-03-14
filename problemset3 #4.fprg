@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 04:18:00 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLThKMjFROEk7MjAyNC0wMy0xNDswMzo1NzoyMSBQTTszMjky"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLThKMjFROEk7MjAyNC0wMy0xNDswNDoxODowMCBQTTszOzMzOTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="costofapp" type="Real" array="False" size=""/>
+            <declare name="costofwar" type="Real" array="False" size=""/>
+            <declare name="percentprice" type="Real" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="costofapp"/>
+            <if expression="costofapp &gt; 1000">
+                <then>
+                    <assign variable="costofwar" expression="costofapp* 0.10"/>
+                </then>
+                <else>
+                    <assign variable="costofwar" expression="costofapp* 0.05"/>
+                </else>
+            </if>
+            <assign variable="total" expression="costofapp + costofwar"/>
+            <output expression="name" newline="True"/>
+            <output expression="costofapp" newline="True"/>
+            <output expression="costofwar" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
