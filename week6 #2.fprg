@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 08:04:43 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVAxUzhIQ0c7MjAyNC0wMy0yMDswNzoyNjoxOSBQTTszMzM1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVAxUzhIQ0c7MjAyNC0wMy0yMDswODowNDo0MyBQTTsyOzM0Mzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="part, quantity" type="Integer" array="False" size=""/>
+            <declare name="cost, total" type="Real" array="False" size=""/>
+            <input variable="part"/>
+            <input variable="quantity"/>
+            <if expression="part=10 || part=55">
+                <then>
+                    <assign variable="cost" expression="1"/>
+                </then>
+                <else>
+                    <if expression="part=99">
+                        <then>
+                            <assign variable="cost" expression="2"/>
+                        </then>
+                        <else>
+                            <if expression="part=80|| part=70">
+                                <then>
+                                    <assign variable="cost" expression="3"/>
+                                </then>
+                                <else>
+                                    <assign variable="cost" expression="5"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="quantity*cost"/>
+            <output expression="&quot;Part number&quot; &amp; part &amp; &quot;Cost per unit&quot; &amp; cost &amp; &quot;Total cost&quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
