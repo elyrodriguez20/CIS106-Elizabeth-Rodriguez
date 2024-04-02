@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-01 10:17:06 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg0QUQwRE47MjAyNC0wMy0xMDswNDoxNDoyMyBQTTszMjk2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg0QUQwRE47MjAyNC0wMy0xMDswNToyNDoxMCBQTTsyOzM0MDM="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTVFRDNHOFI7MjAyNC0wNC0wMTsxMDoxNzowNiBQTTszOzM0MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="examone" type="Real" array="False" size=""/>
+            <declare name="examtwo" type="Real" array="False" size=""/>
+            <declare name="weight" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="totalone" type="Real" array="False" size=""/>
+            <declare name="totaltwo" type="Real" array="False" size=""/>
+            <declare name="overall" type="Real" array="False" size=""/>
+            <input variable="examone"/>
+            <input variable="examtwo"/>
+            <input variable="weight"/>
+            <assign variable="totalone" expression="examone* weight/100"/>
+            <assign variable="totaltwo" expression="examtwo*weight/100"/>
+            <assign variable="overall" expression="totalone + totaltwo"/>
+            <output expression="overall &amp; &quot; &quot;&amp; &quot;Is the total grade&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
