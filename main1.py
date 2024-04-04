@@ -1,0 +1,11 @@
+print("Enter the percent of exam one")
+exam1= float(input())
+print("Enter the percent of exam two")
+exam2= float(input())
+print("Enter the respective weight of the exams")
+weight1= float(input())
+weight2= float(input())
+print("Calculate the total score")
+total= (exam1*weight1)/100+ (exam2 *weight2)/100
+print("The total score is") 
+print(total)
