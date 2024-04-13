@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-13 04:39:28 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdPTVA0VUk7MjAyNC0wNC0xMjswOTo0MjowMyBQTTszMzY5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdPTVA0VUk7MjAyNC0wNC0xMjsxMDoyMzozMCBQTTs1OzM0NzI="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUM0MDdISkI7MjAyNC0wNC0xMzswNDozOToyOCBQTTsxOzM0MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, name" type="String" array="False" size=""/>
+            <declare name="hrs, rate, gross, count, total, overtime" type="Real" array="False" size=""/>
+            <input variable="loop"/>
+            <assign variable="count" expression="0"/>
+            <while expression="loop= &quot;Y&quot;">
+                <assign variable="count" expression="count+1"/>
+                <input variable="name"/>
+                <input variable="hrs"/>
+                <input variable="rate"/>
+                <if expression="hrs&gt;40">
+                    <then>
+                        <assign variable="gross" expression="(40*rate)+ ((hrs-40)*rate*1.5)"/>
+                    </then>
+                    <else>
+                        <assign variable="gross" expression="hrs*rate"/>
+                    </else>
+                </if>
+                <output expression="name &amp; &quot; &quot;&amp; &quot;Is the employees last name&quot;" newline="True"/>
+                <output expression="gross &amp; &quot; &quot; &amp; &quot;Is the gross pay of the employee&quot;" newline="True"/>
+            </while>
+            <output expression="count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
