@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-15 09:01:51 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTgzVjJJVEo7MjAyNC0wMy0yMzswNDo0OTo0NCBQTTszMzM0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTgzVjJJVEo7MjAyNC0wMy0yMzswNToxODoyNSBQTTszOzM0NDA="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNVNjZKTkk7MjAyNC0wNC0xNTswOTowMTo1MSBQTTsxOzM0MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tickets" type="Integer" array="False" size=""/>
+            <declare name="perticket" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <input variable="tickets"/>
+            <if expression="tickets &gt;= 25">
+                <then>
+                    <assign variable="perticket" expression="50.00"/>
+                </then>
+                <else>
+                    <if expression="tickets &gt;= 24">
+                        <then>
+                            <assign variable="perticket" expression="60.00"/>
+                        </then>
+                        <else>
+                            <if expression="tickets &gt;= 10">
+                                <then>
+                                    <assign variable="perticket" expression="60.00"/>
+                                </then>
+                                <else>
+                                    <if expression="tickets &gt;= 9">
+                                        <then>
+                                            <assign variable="perticket" expression="70.00"/>
+                                        </then>
+                                        <else>
+                                            <if expression="tickets &gt;= 5">
+                                                <then>
+                                                    <assign variable="perticket" expression="70.00"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="perticket" expression="75.00"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="perticket * tickets"/>
+            <output expression="tickets &amp; &quot; &quot; &amp; &quot;Is the number of tickets&quot;" newline="True"/>
+            <output expression="perticket &amp; &quot; &quot; &amp; &quot;Is the price per ticket&quot;" newline="True"/>
+            <output expression="total &amp; &quot; &quot; &amp; &quot;Is the total cost&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

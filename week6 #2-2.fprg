@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-15 09:19:31 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVAxUzhIQ0c7MjAyNC0wMy0yMDswNzoyNjoxOSBQTTszMzM1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVAxUzhIQ0c7MjAyNC0wMy0yMDswODowNDo0MyBQTTsyOzM0Mzg="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNVNjZKTkk7MjAyNC0wNC0xNTswOToxOTozMSBQTTsxOzM0Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="part, quantity" type="Integer" array="False" size=""/>
+            <declare name="cost, total" type="Real" array="False" size=""/>
+            <input variable="part"/>
+            <input variable="quantity"/>
+            <if expression="part=10 || part=55">
+                <then>
+                    <assign variable="cost" expression="1.00"/>
+                </then>
+                <else>
+                    <if expression="part=99">
+                        <then>
+                            <assign variable="cost" expression="2.00"/>
+                        </then>
+                        <else>
+                            <if expression="part=80|| part=70">
+                                <then>
+                                    <assign variable="cost" expression="3.00"/>
+                                </then>
+                                <else>
+                                    <assign variable="cost" expression="5.00"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="quantity*cost"/>
+            <output expression="part &amp; &quot; &quot;&amp; &quot;Is the part&quot;" newline="True"/>
+            <output expression="cost &amp; &quot; &quot; &amp;  &quot;Is the cost per unit&quot;" newline="True"/>
+            <output expression="total &amp; &quot; &quot; &amp; &quot;Is the total cost&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
