@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-18 03:12:59 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJFMFVQUU87MjAyNC0wNC0xMDswODo0NjowOCBQTTszMzUw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJFMFVQUU87MjAyNC0wNC0xMDswODo1NToxMCBQTTsxOzM0NTE="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFVODlHUk07MjAyNC0wNC0xODswMzoxMjo1OSBQTTsxOzM0NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, name" type="String" array="False" size=""/>
+            <declare name="e1, e2, total, average, count" type="Integer" array="False" size=""/>
+            <input variable="loop"/>
+            <assign variable="count" expression="0"/>
+            <while expression="loop= &quot;Y&quot;">
+                <assign variable="count" expression="count+1"/>
+                <input variable="name"/>
+                <input variable="e1"/>
+                <input variable="e2"/>
+                <assign variable="average" expression="(e1+e2)/2"/>
+                <output expression="name" newline="True"/>
+                <output expression="average" newline="True"/>
+                <input variable="loop"/>
+            </while>
+            <output expression="count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

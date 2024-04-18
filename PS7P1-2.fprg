@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-18 03:27:02 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTVJSFQxSzc7MjAyNC0wNC0wMzswNzo0ODo1NiBQTTszMzI1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTVJSFQxSzc7MjAyNC0wNC0wMzswODoxNDowNiBQTTszOzM0MjQ="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFVODlHUk07MjAyNC0wNC0xODswMzoyNzowMiBQTTs1OzM0NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Start, Stop, Odd" type="Integer" array="False" size=""/>
+            <assign variable="Start" expression="1"/>
+            <assign variable="Stop" expression="25"/>
+            <while expression="Start&lt;=Stop">
+                <assign variable="Odd" expression="Start mod 1"/>
+                <if expression="Odd=0">
+                    <then>
+                        <output expression="Start" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="Start" expression="Start+2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
