@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 04:54:35 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLThKMjFROEk7MjAyNC0wMy0xNDswNDoyOTozOCBQTTszMzAw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLThKMjFROEk7MjAyNC0wMy0xNDswNDo1NDozNSBQTTszOzM0MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="dependents" type="Integer" array="False" size=""/>
+            <declare name="grossincome" type="Real" array="False" size=""/>
+            <declare name="adjustedgross" type="Real" array="False" size=""/>
+            <declare name="taxrate" type="Real" array="False" size=""/>
+            <declare name="incometax" type="Real" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="dependents"/>
+            <input variable="grossincome"/>
+            <assign variable="adjustedgross" expression="grossincome-dependents*12000"/>
+            <if expression="adjustedgross&gt; 50000">
+                <then>
+                    <assign variable="taxrate" expression="adjustedgross* 0.20"/>
+                </then>
+                <else>
+                    <assign variable="taxrate" expression="adjustedgross * 0.10"/>
+                </else>
+            </if>
+            <assign variable="incometax" expression="adjustedgross * taxrate"/>
+            <if expression="incometax&lt;0">
+                <then>
+                    <assign variable="incometax" expression="100"/>
+                </then>
+                <else>
+                    <assign variable="incometax" expression="0"/>
+                </else>
+            </if>
+            <output expression="lastname" newline="True"/>
+            <output expression="grossincome" newline="True"/>
+            <output expression="dependents" newline="True"/>
+            <output expression="adjustedgross" newline="True"/>
+            <output expression="incometax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
